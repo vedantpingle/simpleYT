@@ -1,0 +1,217 @@
+.header{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-bottom-width: 1px;
+    border-color: lightgray;
+    border-bottom-style: solid;
+    z-index: 100;
+}
+
+.left-section{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+ 
+}
+.right-section{
+    width: 300px;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.middle-section{
+    
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 50px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.ytImage{
+    width: 150px;
+
+}
+.menuImage{
+    width:38px;
+    margin-right: 35px;
+    margin-left: 30px;
+}
+
+.micIcon{
+    width: 30px;
+    
+    
+}
+.micButton{
+    width: 50px;
+     border:none;
+     border-radius: 50px;
+     height: 50px;
+     cursor: pointer;
+}
+
+.searchIcon{
+    width:38px;
+}
+.searchButton{
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    height: 50px;
+    margin-right: 20px;
+    width: 90px;
+    cursor: pointer;
+
+}
+.searchBar{
+    
+    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 0;
+    
+}
+.searchBar::placeholder{
+    font-size: 20px;
+    font-family: Roboto;
+}
+.searchBar:active{
+    padding: 10px;
+    font-size: 20px;
+}
+.createButton{
+    width: 50px;
+    height: 50px;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+}
+.youtubeAppsButton{
+    width: 50px;
+    height: 50px;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+}
+.notifButton{
+     width: 50px;
+    height: 50px;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.userpfpButton{
+    width: 50px;
+    height: 50px;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.userpfpIcon{
+    width: 50px;
+}
+.notification-count{
+    position: absolute;
+    top:-2;
+    right: -2;
+    border-radius: 20px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-color: white;
+    border-style:solid;
+    border-width: 3px;
+    color:white;
+    padding-top: 2px;
+    padding-right: 1px;
+    padding-left: 1px;
+    font-family: Roboto;
+
+}
+
+.sidebar{
+    top: 90px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    width: 82px;
+
+}
+
+.sidebar-element{
+    height: 80px;
+    width:80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    font-family: Roboto;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0px;
+    cursor: pointer;
+}
+.sidebar-element:hover{
+    background-color: lightgray;
+    
+    
+}
+
+.sidebar-element img{
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+
+.tooltip{
+    background-color: black;
+    color: white;
+    font-family: Roboto;
+    padding:2px 6px;
+    pointer-events: none;
+}
+.notifButton .tooltip{
+   
+    position: absolute;
+    bottom: -25;
+    left: -10;
+    opacity: 0;
+    transition: 0.3s;
+    
+}
+
+.notifButton:hover .tooltip{
+    opacity: 1;
+}
+
+
+.video-preview:hover .video-info-grid{
+    background-color: rgb(233, 233, 233);
+
+}
+
+
